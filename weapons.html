@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Black Mesa Research Facility - Weapons</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1c1c1c; /* Dark background */
+            color: #ddd; /* Light text */
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            background-color: #333;
+        }
+        nav a {
+            color: #ddd;
+            padding: 1rem;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #444;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: #2e2e2e; /* Dark container background */
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+        }
+        .weapon-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .weapon-list li {
+            position: relative;
+            overflow: hidden;
+            border: 2px solid #444;
+            border-radius: 8px;
+        }
+        .weapon-list img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .weapon-name {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 18px;
+            opacity: 0;
+            pointer-events: none;
+            user-select: none;
+            transition: opacity 0.3s ease-in-out;
+        }
+        .weapon-list li:hover .weapon-name {
+            opacity: 1;
+        }
+        .description {
+            margin-top: 2rem;
+            text-align: center;
+            font-style: italic;
+            color: #bbb;
+        }
+        footer {
+            background-color: #000;
+            color: #fff;
+            padding: 1rem;
+            text-align: center;
+        }
+        footer a {
+            color: #ddd;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Black Mesa Research Facility</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="research.html">Research</a>
+    <a href="security.html">Security</a>
+    <a href="weapons.html">Weapons</a>
+</nav>
+
+<div class="container">
+    <h2>Available Weapons</h2>
+    <ul class="weapon-list">
+        <li>
+            <img src="https://media.discordapp.net/attachments/1137416847147405373/1272718844640891023/New_Project_58.png?ex=66bbff4a&is=66baadca&hm=b1bf945c0968024904954be6573cff3560c1d82ad51a02db47332ccece63298f&=&format=webp&quality=lossless" alt="Weapon 1">
+            <div class="weapon-name">HK MP5</div>
+        </li>
+        <li>
+            <img src="https://media.discordapp.net/attachments/1137416847147405373/1272718490993692734/New_Project_57.png?ex=66bbfef6&is=66baad76&hm=5c970859535e17365574709757e025ef0283704e48f70c505e87d6a6076fde1c&=&format=webp&quality=lossless" alt="Weapon 2">
+            <div class="weapon-name">Glock 17</div>
+        </li>
+        <li>
+            <img src="https://media.discordapp.net/attachments/1137416847147405373/1272719145334738964/New_Project_6.jpg?ex=66bbff92&is=66baae12&hm=6b5a22187218f523b358fb1bb06f70a257421b45ac17fef5d4e1bc7cfe6a4978&=&format=webp" alt="Weapon 3">
+            <div class="weapon-name">Remington 1858</div>
+        </li>
+        <li>
+            <img src="https://media.discordapp.net/attachments/1137416847147405373/1272719447269834886/New_Project_7.jpg?ex=66bbffda&is=66baae5a&hm=a04bcadf5ed4ff3d6b4e227760fc5eb6a2fc90e08d51c1a17355feea82ec3b49&=&format=webp" alt="Weapon 4">
+            <div class="weapon-name">Franchi SPAS-12</div>
+        </li>
+        <li>
+            <img src="https://media.discordapp.net/attachments/1137416847147405373/1272720142304022568/New_Project_8.jpg?ex=66bc007f&is=66baaeff&hm=4fdf3a8b8b4931206d093cbf094f0a9bcca7434f298aaf8a1b50b018f43e2305&=&format=webp" alt="Weapon 5">
+            <div class="weapon-name">Crossbow</div>
+        </li>
+        <li>
+            <img src="https://media.discordapp.net/attachments/1137416847147405373/1272720288110481503/New_Project_9.jpg?ex=66bc00a2&is=66baaf22&hm=be2a7ec5e0e97da63e2b9161be4a1735900505cd92de63316b9f265d54a428c2&=&format=webp" alt="Weapon 6">
+            <div class="weapon-name">Mk-153 SMAW</div>
+        </li>
+        <li>
+            <img src="https://media.discordapp.net/attachments/1137416847147405373/1272720519354912768/New_Project_10.jpg?ex=66bc00d9&is=66baaf59&hm=7b24e8dcf5c83eeddb8072096915b4b46f2c52d503aac69c498a17255bc0459a&=&format=webp" alt="Weapon 7">
+            <div class="weapon-name">Tau Cannon</div>
+        </li>
+        <li>
+            <img src="https://media.discordapp.net/attachments/1137416847147405373/1272720684992434310/New_Project_11.jpg?ex=66bc0101&is=66baaf81&hm=8c4b7e1e047a67309ecf15d3d96d897e9498b5a5723d87f5689fdc4dd3e8e892&=&format=webp" alt="Weapon 8">
+            <div class="weapon-name">Gluon Gun</div>
+        </li>
+        <li>
+            <img src="https://media.discordapp.net/attachments/1137416847147405373/1272720865007767653/New_Project_12.jpg?ex=66bc012c&is=66baafac&hm=14894cf8df04707f99b7770b8c6b02c24ad2b41ced4d57e01d52a3bf0c4a220d&=&format=webp" alt="Weapon 9">
+            <div class="weapon-name">Hornet Gun</div>
+        </li>
+    </ul>
+</div>
+
+<div class="description">
+    <p>These are our current weapons that we own in the facility at Black Mesa. Any unauthorized permission to possess one of these weapons will result in severe consequences.</p>
+</div>
+
+<footer>
+    <p>&copy; 2024 Black Mesa Research Facility. All rights reserved.</p>
+    <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Site Map</a></p>
+</footer>
+
+</body>
+</html>
